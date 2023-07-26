@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <title>My Weather App</title>
+</head>
+<body id="body">
+    <h1>Weather App</h1>
+<div id="weather-card">
+    <div class="col-xs-6 search" >
+        <div class="right-inner-addon">
+          <i class="icon-search"></i>
+          <input type="search" class="form-control" placeholder="Search" id="weather-search"/>
+        </div>
+        <button type="button" class="btn btn-primary" id="search-weather-button">Search</button>
+      </div>
+    <div id="weather-info">
+        <img id="weather-image">
+    <h3 id="current-condition"></h3>
+    <h3 id="weather-location"></h3>
+    <h4 id="weather-location-specific"></h4>
+    <h2 id="weather-temperature"></h3>
+    </div>
+    <div id="forecast">
+       <div class="forecast-main"><div class="forecast-image"><img id="day1Img"><span id="day1"></span></div><div class="temperatures-forecast"><p id="temp-high1"></p><p id="temp-low1"></p></div></div> 
+       <div class="forecast-main"><div class="forecast-image"><img id="day2Img"><span id="day2"></span></div><div class="temperatures-forecast"><p id="temp-high2"></p><p id="temp-low2"></p></div></div> 
+       <div class="forecast-main"><div class="forecast-image"><img id="day3Img"><span id="day3"></span></div><div class="temperatures-forecast"><p id="temp-high3"></p><p id="temp-low3"></p></div></div> 
+       <div class="forecast-main"><div class="forecast-image"><img id="day4Img"><span id="day4"></span></div><div class="temperatures-forecast"><p id="temp-high4"></p><p id="temp-low4"></p></div></div> 
+       <div class="forecast-main"><div class="forecast-image"><img id="day5Img"><span id="day5"></span></div><div class="temperatures-forecast"><p id="temp-high5"></p><p id="temp-low5"></p></div></div> 
+    </div>
+</div>
+
+
+    <script src="scripts.js"></script>
+</html>
+</body>

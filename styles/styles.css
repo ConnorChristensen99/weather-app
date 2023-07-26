@@ -1,0 +1,53 @@
+#body {
+    background-color:rgb(92, 92, 92);
+    margin: auto;
+    width: 50%;
+}
+
+#weather-card{
+    background-color: aliceblue;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#weather-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.search button {
+    margin-left: 10px;
+}
+#forecast {
+    display: flex;
+}
+.forecast-image {
+    display: flex;
+    flex-direction: column;
+}
+.forecast-main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.temperatures-forecast {
+    display: flex;
+}
+#temp-high1, #temp-high2, #temp-high3, #temp-high4, #temp-high5 {
+    font-weight: 600;
+    padding: 5px;
+}
+#temp-low1, #temp-low2, #temp-low3, #temp-low4, #temp-low5 {
+    color: grey;
+    padding: 5px;
+}
