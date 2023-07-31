@@ -43,16 +43,111 @@ searchWeather.addEventListener('click', () => {
         weatherLocationSpecific.innerText = weather.location.region
         weatherTemperature.innerText = weather.current.temp_f + '\u00B0' + 'F'
 
-        day1.innerText = weather.forecast.forecastday[0].date
+        const d = new Date(`${weather.forecast.forecastday[0].hour[1].time}`);
+        let day11 = d.getDay();
+        if (day11 === 0) {
+          day11 = "Sunday"
+        } else if (day11 === 1) {
+          day11 = "Monday"
+        } else if (day11 === 2) {
+          day11 = "Tuesday"
+        } else if (day11 === 3) {
+          day11 = "Wednesday"
+        } else if (day11 === 4) {
+          day11 = "Thursday"
+        } else if (day11 === 5) {
+          day11 = "Friday"
+        } else if (day11 === 6) {
+          day11 = "Saturday"
+        }
+        day1.innerText = day11
         day1Img.src = weather.forecast.forecastday[0].day.condition.icon
-        day2.innerText = weather.forecast.forecastday[1].date
+
+
+        const d1 = new Date(`${weather.forecast.forecastday[1].hour[1].time}`);
+        let day12 = d1.getDay();
+        if (day12 === 0) {
+          day12 = "Sunday"
+        } else if (day12 === 1) {
+          day12 = "Monday"
+        } else if (day12 === 2) {
+          day12 = "Tuesday"
+        } else if (day12 === 3) {
+          day12 = "Wednesday"
+        } else if (day12 === 4) {
+          day12 = "Thursday"
+        } else if (day12 === 5) {
+          day12 = "Friday"
+        } else if (day12 === 6) {
+          day12 = "Saturday"
+        }
+        day2.innerText = day12
         day2Img.src = weather.forecast.forecastday[1].day.condition.icon
-        day3.innerText = weather.forecast.forecastday[2].date
+
+
+        const d2 = new Date(`${weather.forecast.forecastday[2].hour[1].time}`);
+        let day13 = d2.getDay();
+        if (day13 === 0) {
+          day13 = "Sunday"
+        } else if (day13 === 1) {
+          day13 = "Monday"
+        } else if (day13 === 2) {
+          day13 = "Tuesday"
+        } else if (day13 === 3) {
+          day13 = "Wednesday"
+        } else if (day13 === 4) {
+          day13 = "Thursday"
+        } else if (day13 === 5) {
+          day13 = "Friday"
+        } else if (day13 === 6) {
+          day13 = "Saturday"
+        }
+        day3.innerText = day13
         day3Img.src = weather.forecast.forecastday[2].day.condition.icon
-        day4.innerText = weather.forecast.forecastday[3].date
+
+
+        const d3 = new Date(`${weather.forecast.forecastday[3].hour[1].time}`);
+        let day14 = d3.getDay();
+        if (day14 === 0) {
+          day14 = "Sunday"
+        } else if (day14 === 1) {
+          day14 = "Monday"
+        } else if (day14 === 2) {
+          day14 = "Tuesday"
+        } else if (day14 === 3) {
+          day14 = "Wednesday"
+        } else if (day14 === 4) {
+          day14 = "Thursday"
+        } else if (day14 === 5) {
+          day14 = "Friday"
+        } else if (day14 === 6) {
+          day14 = "Saturday"
+        }
+        day4.innerText = day14
         day4Img.src = weather.forecast.forecastday[3].day.condition.icon
-        day5.innerText = weather.forecast.forecastday[4].date
+
+
+        const d4 = new Date(`${weather.forecast.forecastday[4].hour[1].time}`);
+        let day15 = d4.getDay();
+        if (day15 === 0) {
+          day15 = "Sunday"
+        } else if (day15 === 1) {
+          day15 = "Monday"
+        } else if (day15 === 2) {
+          day15 = "Tuesday"
+        } else if (day15 === 3) {
+          day15 = "Wednesday"
+        } else if (day15 === 4) {
+          day15 = "Thursday"
+        } else if (day15 === 5) {
+          day15 = "Friday"
+        } else if (day15 === 6) {
+          day15 = "Saturday"
+        }
+        day5.innerText = day15
         day5Img.src = weather.forecast.forecastday[4].day.condition.icon
+
+
 
         tempHigh1.innerText = weather.forecast.forecastday[0].day.maxtemp_f
         tempLow1.innerText = weather.forecast.forecastday[0].day.mintemp_f
@@ -64,7 +159,9 @@ searchWeather.addEventListener('click', () => {
         tempLow4.innerText = weather.forecast.forecastday[3].day.mintemp_f
         tempHigh5.innerText = weather.forecast.forecastday[4].day.maxtemp_f
         tempLow5.innerText = weather.forecast.forecastday[4].day.mintemp_f
+        
       }
+
       getWeather()
 })
 

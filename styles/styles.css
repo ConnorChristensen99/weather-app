@@ -3,7 +3,10 @@
     margin: auto;
     width: 50%;
 }
-
+.header {
+    display: flex;
+    justify-content: center;
+}
 #weather-card{
     background-color: aliceblue;
     font-family: 'Prompt', sans-serif;
@@ -30,6 +33,8 @@
 }
 #forecast {
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .forecast-image {
     display: flex;
