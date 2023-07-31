@@ -33,7 +33,7 @@ searchWeather.addEventListener('click', () => {
     console.log(searchBar.value)
     let searchedWeather = searchBar.value
     async function getWeather() {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c970425d8dc34c1aab0191907232607&q=${searchedWeather}&days=5&aqi=no&alerts=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c970425d8dc34c1aab0191907232607&q=${searchedWeather}&days=5&aqi=no&alerts=no`);
         const weather = await response.json();
         console.log(weather);
 
